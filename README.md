@@ -1,15 +1,25 @@
 # Wine-quality-classification
+<br>
 import pandas as pd
+<br>
 import numpy as np
+<br>
 import seaborn as sns
+<br>
 from sklearn.model_selection import train_test_split , cross_val_score , GridSearchCV
+<br>
 from sklearn.preprocessing import StandardScaler, LabelEncoder
+<br>
 from sklearn.metrics import (classification_report, confusion_matrix, 
                              accuracy_score, precision_score, recall_score, 
                              f1_score)
+<br>
 from sklearn.linear_model import LogisticRegression
+<br>
 from xgboost import XGBClassifier
+<br>
 import warnings
+****
 warnings.filterwarnings('ignore')
 def load_data_from_csv(file_path, target_column=None):
     try: 
